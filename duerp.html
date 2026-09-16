@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhklEQVR4nO2SUQ2AMBBDDxRMARIwMgnTNwkzggQUzAF8sWRdj08goe/rrmnS5nJmQgghxMtMTFxyPa55T4F6zMxy3JovldX11ZibL5TU+ea7cLazcLazcLZ3Bbww1L0w1DGM6cMFnuZbBbyHQ917ONTx4Zg+XADDvFIY5pXCEl4pIYQQ/+UEg0g8Dn1vS2YAAAAASUVORK5CYII=">
+<link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAIAEBAAAAAAIACFAQAAJgAAACAgAAAAACAAvwAAAKsBAACJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAFMSURBVHic7dG/TsJQFAbw797+uU2lTXkAo4O7AxtxFapg4kKMg75KGR1YGNlIDEsTTCwh8REc2JwdWNSEakBIQOntcRBKAw6uJn7jLzlfTs4B/rOKT0quQRpALKGKrzRyPQ1AYlTxFco1NEoZ4BFf7/PgbRh5m5YMbzfDwk77owoitqxuur1C++SxCiCx0G0WotMbjxabMoDY7vXoMDZFR80YuhyMuv1Lp9w6eigKbgSWcPS36VP3vLtfHpZaRcFFYAhbH04Ht47MnnGAETE6UCxDj8JhzFWtBAYoUZS3RFYPp8+xyrQSAFAs84thYkRl4FVweMQ/bedKhqMOM7cmczl3mQT6wqiFs+fAVK2JJOkyAC+aXRvPBkFGM8cRp2N2d/GO9NX36qG9fqK6e79hoVtft1UJfF9ZN7/ybenX0Q+fAyhVtCT8zv5wvgD/i4p5mFA2cgAAAABJRU5ErkJggolQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAIZJREFUeJztklENgDAQQw8UTAESMDIJ0zcJM4IEFMwBfLFkXY9PIKHv665p0uZyZkIIIcTLTExccj2ueU+BeszMctyaL5XV9dWYmy+U1Pnmu3C2s3C2s3C2dwW8MNS9MNQxjOnDBZ7mWwW8h0PdezjU8eGYPlwAw7xSGOaVwhJeKSGEEP/lBINIPA59b0tmAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhklEQVR4nO2SUQ2AMBBDDxRMARIwMgnTNwkzggQUzAF8sWRdj08goe/rrmnS5nJmQgghxMtMTFxyPa55T4F6zMxy3JovldX11ZibL5TU+ea7cLazcLazcLZ3Bbww1L0w1DGM6cMFnuZbBbyHQ917ONTx4Zg+XADDvFIY5pXCEl4pIYQQ/+UEg0g8Dn1vS2YAAAAASUVORK5CYII=">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUERP obligatoire : Document Unique des Risques Professionnels | ATYLEM</title>
+<meta name="description" content="Le DUERP est obligatoire dès le premier salarié, avec amende en cas de contrôle. ATYLEM l'élabore et le met à jour pour les artisans du bâtiment en Savoie.">
+<meta name="keywords" content="DUERP obligatoire, document unique évaluation risques professionnels, DUERP artisan bâtiment, DUERP Savoie, DUERP Chambéry, ATYLEM, Alison Straka">
+<meta name="author" content="Alison STRAKA – ATYLEM">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.atylem.fr/duerp.html">
+<meta property="og:title" content="DUERP obligatoire : Document Unique des Risques Professionnels | ATYLEM">
+<meta property="og:description" content="Le DUERP est obligatoire dès le premier salarié. ATYLEM l'élabore et le met à jour pour les artisans du bâtiment en Savoie.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.atylem.fr/duerp.html">
+<meta property="og:locale" content="fr_FR">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family: Arial, Helvetica, sans-serif; color:#1e1e1e; background:#faf8fc; overflow-x:hidden; font-size:16px; line-height:1.6; }
+
+:root {
+  --blue:   #1ea5f0;
+  --purple: #a54bd2;
+  --pink:   #f04ba5;
+  --dark:   #1e1e1e;
+  --mid:    #444444;
+  --light:  #888888;
+  --bg:     #faf8fc;
+  --bg-alt: #f0ecf7;
+  --white:  #ffffff;
+  --border: #ddd6ee;
+  --grad:   linear-gradient(135deg, #1ea5f0, #a54bd2, #f04ba5);
+}
+
+/* NAV */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  height:66px; background:rgba(250,248,252,0.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 6%;
+}
+.nav-logo img { height:36px; }
+.nav-links { display:flex; gap:2rem; list-style:none; }
+.nav-links a { text-decoration:none; font-size:13px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#444; }
+.nav-links a:hover { color:var(--purple); }
+.nav-cta { background:var(--grad); color:#fff !important; padding:8px 20px; border-radius:50px; }
+
+/* DOTS */
+.dots { display:flex; gap:5px; align-items:center; }
+.dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+.dot-b { background:#1ea5f0; }
+.dot-p { background:#a54bd2; }
+.dot-k { background:#f04ba5; }
+
+/* SECTION LABEL */
+.s-label { display:flex; align-items:center; gap:8px; font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:#1e1e1e; margin-bottom:12px; }
+.s-title { font-family: Georgia, 'Times New Roman', serif; font-size:clamp(28px,3.5vw,46px); font-weight:700; color:#1e1e1e; line-height:1.15; }
+.grad-text { background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-style:italic; }
+
+/* SECTIONS */
+section { padding:90px 8%; position:relative; overflow:hidden; }
+.s-alt { background:var(--bg-alt); }
+
+/* HERO */
+.hero { min-height:100vh; padding-top:66px; display:grid; grid-template-columns:1fr 1fr; background:var(--bg); }
+.hero-left { display:flex; flex-direction:column; justify-content:center; padding:8% 5% 8% 8%; position:relative; z-index:2; }
+.hero-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:28px; }
+.hero-eyebrow span { font-size:12px; font-weight:600; letter-spacing:.15em; text-transform:uppercase; color:#444; }
+.hero-title { font-family:Georgia,'Times New Roman',serif; font-size:clamp(36px,5vw,62px); font-weight:700; line-height:1.08; color:#1e1e1e; margin-bottom:20px; }
+.hero-sub { font-size:17px; color:#444; line-height:1.8; max-width:440px; margin-bottom:32px; }
+.hero-btns { display:flex; gap:14px; flex-wrap:wrap; }
+.btn-main { background:var(--grad); color:#fff; text-decoration:none; padding:14px 30px; border-radius:50px; font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; box-shadow:0 8px 24px rgba(165,75,210,.25); display:inline-block; }
+.btn-sec { color:#444; text-decoration:none; padding:14px 30px; border-radius:50px; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; border:1.5px solid #ddd6ee; display:inline-block; }
+.btn-sec:hover { border-color:var(--purple); color:var(--purple); }
+
+/* Hero right : bulles graphiques */
+.hero-right { position:relative; overflow:hidden; }
+
+
+/* "Depuis 2018" intégré graphiquement */
+.hero-since {
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  display:flex; flex-direction:column; align-items:center; gap:0; z-index:3;
+  text-align:center;
+  padding:0;
+}
+.hero-since-year {
+  font-family:Arial, Helvetica, sans-serif; font-size:120px; font-weight:700;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-3px;
+  background:linear-gradient(135deg,#1ea5f0 0%,#a54bd2 50%,#f04ba5 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+  line-height:1; opacity:1;
+  filter:drop-shadow(0 0 16px rgba(255,255,255,1)) drop-shadow(0 0 32px rgba(255,255,255,.8)) drop-shadow(0 4px 20px rgba(165,75,210,.4));
+  margin:14px 0;
+}
+.hero-since-depuis {
+  font-size:14px; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+  color:#222;
+  padding-bottom:12px;
+  border-bottom:2px solid rgba(165,75,210,.60);
+  width:100%;
+  text-align:center;
+  text-shadow:0 0 12px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,.9);
+}
+.hero-since-label {
+  font-size:14px; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+  color:#222;
+  padding-top:12px;
+  border-top:2px solid rgba(165,75,210,.60);
+  width:100%;
+  text-align:center;
+  text-shadow:0 0 12px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,.9);
+}
+
+/* AVANTAGES */
+.av-intro { font-size:16px; color:#444; line-height:1.8; max-width:660px; margin-top:12px; margin-bottom:40px; }
+.av-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+.av-card {
+  background:var(--white); border:1px solid var(--border); border-radius:18px;
+  padding:28px 20px; position:relative; overflow:hidden;
+  transition:transform .3s, box-shadow .3s;
+  isolation:isolate;
+}
+.av-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(165,75,210,.12); }
+
+
+.av-num { font-family:Georgia,serif; font-size:34px; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; margin-bottom:10px; position:relative; z-index:1; }
+.av-card p { font-size:14px; color:#444; line-height:1.6; position:relative; z-index:1; font-weight:500; }
+
+/* QUI SUIS-JE */
+.about-grid { display:grid; grid-template-columns:360px 1fr; gap:7%; align-items:start; margin-top:32px; }
+.about-img-wrap { position:relative; flex-shrink:0; }
+
+.about-img-circle img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
+
+
+
+
+
+
+
+.about-text { font-size:16px; color:#444; line-height:1.9; margin-top:14px; }
+.about-text strong { color:#1e1e1e; font-weight:700; }
+.about-text + .about-text { margin-top:12px; }
+
+/* SERVICES */
+.svc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:36px; }
+.svc-card { background:var(--white); border:1px solid var(--border); border-radius:20px; padding:28px; position:relative; overflow:hidden; transition:box-shadow .3s, transform .3s; }
+.svc-card:hover { box-shadow:0 20px 50px rgba(165,75,210,.10); transform:translateY(-4px); }
+.svc-card:hover .svc-bub { opacity:.14; transform:scale(1.15); }
+.svc-bub { position:absolute; border-radius:50%; width:110px; height:110px; right:-22px; bottom:-22px; opacity:0; transition:all .4s; }
+.svc-icon { width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--grad); margin-bottom:16px; }
+.svc-icon svg { width:20px; height:20px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.svc-card h3 { font-family:Georgia,serif; font-size:17px; font-weight:700; color:#1e1e1e; margin-bottom:12px; line-height:1.3; }
+.svc-card ul { list-style:none; }
+.svc-card ul li { font-size:14px; color:#444; padding:5px 0; border-bottom:1px solid var(--border); display:flex; align-items:baseline; gap:8px; font-weight:500; }
+.svc-card ul li:last-child { border-bottom:none; }
+.svc-card ul li::before { content:'·'; color:var(--purple); font-size:20px; line-height:.7; flex-shrink:0; }
+.svc-cta { grid-column:1/-1; background:var(--grad); color:#fff; text-decoration:none; display:flex; align-items:center; justify-content:center; border-radius:20px; padding:28px; font-family:Georgia,serif; font-size:20px; font-style:italic; text-align:center; box-shadow:0 8px 30px rgba(165,75,210,.2); transition:opacity .2s,transform .2s; }
+.svc-cta:hover { opacity:.88; transform:translateY(-4px); }
+
+/* PROCESS */
+.process-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px; position:relative; }
+.process-grid::before { content:''; position:absolute; top:34px; left:calc(12.5% + 12px); right:calc(12.5% + 12px); height:1px; background:var(--border); }
+.p-step { text-align:center; }
+.p-num { width:68px; height:68px; border-radius:50%; background:var(--grad); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-family:Georgia,serif; font-size:26px; font-weight:700; color:#fff; position:relative; z-index:1; box-shadow:0 8px 24px rgba(165,75,210,.25); }
+.p-step h3 { font-family:Georgia,serif; font-size:17px; font-weight:700; color:#1e1e1e; margin-bottom:8px; }
+.p-step p  { font-size:14px; color:#444; line-height:1.6; font-weight:500; }
+
+/* SECTEUR */
+.secteur-grid { display:grid; grid-template-columns:1fr 1fr; gap:4%; margin-top:36px; align-items:start; }
+.map-box { border-radius:20px; overflow:hidden; box-shadow:0 20px 50px rgba(165,75,210,.12); border:1px solid var(--border); height:100%; display:flex; flex-direction:column; }
+.map-box iframe { display:block; width:100%; flex:1; border:none; min-height:380px; }
+.secteur-right { display:flex; flex-direction:column; gap:14px; }
+.mode-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.mode-card { border-radius:14px; padding:28px 16px; text-align:center; transition:transform .3s; position:relative; overflow:hidden; }
+.mode-card:hover { transform:translateY(-3px); }
+.mode-card .mc-icon { font-size:26px; margin-bottom:8px; }
+.mode-card h4 { font-size:14px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; position:relative; z-index:1; }
+.mc-bub { display:none; }
+.mc-blue   { background:rgba(30,165,240,.12); border:1.5px solid rgba(30,165,240,.3); }
+.mc-blue h4 { color:#1ea5f0; }
+.mc-blue .mc-bub { background:#1ea5f0; }
+.mc-purple { background:rgba(165,75,210,.12); border:1.5px solid rgba(165,75,210,.3); }
+.mc-purple h4 { color:#a54bd2; }
+.mc-purple .mc-bub { background:#a54bd2; }
+.villes { background:rgba(240,75,165,.08); border:1.5px solid rgba(240,75,165,.25); border-radius:14px; padding:18px; position:relative; overflow:hidden; }
+.villes-bub { display:none; }
+.villes h4 { font-size:11px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; margin-top:14px; margin-bottom:4px; color:#f04ba5; position:relative; z-index:1; }
+.villes h4:first-child { margin-top:0; }
+.villes p { font-size:14px; color:#444; line-height:1.75; font-weight:500; position:relative; z-index:1; }
+
+/* CLIENTS */
+.clients-wrap { overflow:hidden; position:relative; margin-top:36px; }
+.clients-pause {
+  position:absolute; top:-36px; right:0;
+  background:none; border:1px solid var(--border);
+  border-radius:50px; padding:4px 12px;
+  font-size:11px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--light);
+  cursor:pointer; transition:border-color .2s, color .2s;
+  z-index:2;
+}
+.clients-pause:hover { border-color:var(--purple); color:var(--purple); }
+.clients-wrap::before, .clients-wrap::after { content:''; position:absolute; top:0; bottom:0; width:100px; z-index:2; pointer-events:none; }
+.clients-wrap::before { left:0;  background:linear-gradient(to right, var(--bg), transparent); }
+.clients-wrap::after  { right:0; background:linear-gradient(to left,  var(--bg), transparent); }
+.clients-track { display:flex; gap:16px; width:max-content; animation:scroll 36s linear infinite; }
+.clients-track:hover { animation-play-state:paused; }
+@keyframes scroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+.client-card { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:26px 22px; text-align:center; text-decoration:none; color:inherit; display:flex; flex-direction:column; align-items:center; width:230px; flex-shrink:0; transition:box-shadow .3s,transform .3s; position:relative; }
+.client-card:hover { box-shadow:0 14px 32px rgba(165,75,210,.13); transform:translateY(-4px); }
+.client-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--grad); opacity:0; border-radius:0 0 18px 18px; transition:opacity .3s; }
+.client-card:hover::after { opacity:1; }
+.client-logo { width:90px; height:90px; border-radius:50%; object-fit:cover; border:2px solid var(--border); margin-bottom:12px; }
+.client-card h4 { font-size:14px; font-weight:700; color:#1e1e1e; margin-bottom:5px; line-height:1.3; }
+.client-card p  { font-size:13px; color:#888; }
+
+/* TEMOIGNAGES */
+.temo-outer { position:relative; margin-top:48px; }
+.temo-stage {
+  position:relative; min-height:320px;
+  display:flex; align-items:center; justify-content:center;
+}
+.temo {
+  position:absolute; top:0; left:50%; transform:translateX(calc(-50% + 40px));
+  width:100%; max-width:760px;
+  opacity:0; transition:opacity .5s ease;
+  pointer-events:none;
+  text-align:center; padding:2.5rem 3rem 2rem;
+  background:rgba(255,255,255,0.65);
+  backdrop-filter:blur(10px);
+  border-radius:24px;
+  box-shadow:0 8px 40px rgba(165,75,210,.10);
+}
+.temo::before {
+  content:'"';
+  font-family:Georgia,serif; font-size:100px; line-height:.7;
+  background:linear-gradient(135deg,#1ea5f0,#a54bd2,#f04ba5);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+  position:absolute; top:16px; left:28px;
+  opacity:.25; pointer-events:none;
+}
+.temo.active {
+  opacity:1;
+  pointer-events:auto;
+  position:relative; top:auto; left:auto;
+  transform:none;
+  width:100%; max-width:760px; margin:0 auto;
+}
+
+.temo p {
+  font-size:20px; color:#333; line-height:1.75;
+  font-style:italic; font-weight:400;
+  margin-bottom:28px;
+}
+.temo-author {
+  display:flex; align-items:center; justify-content:center;
+  gap:14px; margin-top:24px;
+  padding-top:20px;
+  border-top:1px solid rgba(165,75,210,.15);
+}
+.temo-avatar { width:52px; height:52px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 4px 12px rgba(165,75,210,.20); }
+.temo-init {
+  width:52px; height:52px; border-radius:50%;
+  background:linear-gradient(135deg,#1ea5f0,#a54bd2,#f04ba5);
+  display:flex; align-items:center; justify-content:center;
+  font-size:15px; font-weight:700; color:#fff; flex-shrink:0;
+  box-shadow:0 4px 12px rgba(165,75,210,.25);
+}
+.temo-author strong {
+  display:block; font-size:17px; font-weight:700; color:#1e1e1e; text-align:left;
+  letter-spacing:.01em;
+}
+.temo-author span {
+  font-size:13px; text-align:left; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  background:linear-gradient(135deg,#1ea5f0,#a54bd2,#f04ba5);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+
+.temo-nav {
+  display:flex; align-items:center; justify-content:center;
+  gap:20px; margin-top:40px;
+}
+.temo-arrow {
+  width:44px; height:44px; border-radius:50%;
+  border:1.5px solid #e4ddf0; background:#fff;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:border-color .2s, transform .2s;
+  font-size:18px; color:#a54bd2; user-select:none;
+}
+.temo-arrow:hover { border-color:#a54bd2; transform:scale(1.08); }
+.temo-dots { display:flex; gap:8px; align-items:center; }
+.temo-dot {
+  width:8px; height:8px; border-radius:50%; background:#e4ddf0;
+  cursor:pointer; transition:background .3s, transform .3s;
+}
+.temo-dot.active { background:#a54bd2; transform:scale(1.3); }
+
+/* CONTACT */
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:6%; margin-top:36px; align-items:stretch; }
+.contact-grid > div:first-child { display:flex; flex-direction:column; justify-content:space-between; min-height:100%; }
+.contact-form { display:flex; flex-direction:column; justify-content:space-between; height:100%; }
+.contact-info p { font-size:16px; color:#444; line-height:1.85; margin-top:14px; margin-bottom:28px; font-weight:500; }
+.cdetail { display:flex; align-items:flex-start; gap:14px; margin-bottom:16px; }
+.cdetail-icon { width:40px; height:40px; border-radius:50%; background:var(--grad); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.cdetail-icon svg { width:18px; height:18px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.cdetail-text strong { display:block; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#888; margin-bottom:3px; }
+.cdetail-text a, .cdetail-text span { font-size:15px; color:#1e1e1e; text-decoration:none; font-weight:500; }
+.cdetail-text a:hover { color:#a54bd2; }
+.contact-form { background:var(--bg-alt); border:1px solid var(--border); border-radius:22px; padding:30px; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.fg { margin-bottom:12px; }
+.fg label { display:block; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#888; margin-bottom:6px; }
+.fg input, .fg textarea { width:100%; border:1.5px solid var(--border); border-radius:10px; padding:11px 14px; font-family:Arial,sans-serif; font-size:15px; color:#1e1e1e; background:#fff; outline:none; transition:border-color .2s; }
+.fg input:focus, .fg textarea:focus { border-color:#a54bd2; }
+.fg textarea { height:110px; resize:none; flex:1; min-height:110px; }
+.btn-send { width:100%; padding:14px; background:var(--grad); color:#fff; border:none; border-radius:50px; font-family:Arial,sans-serif; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; cursor:pointer; margin-top:6px; box-shadow:0 8px 24px rgba(165,75,210,.2); transition:opacity .2s,transform .2s; }
+.btn-send:hover { opacity:.85; transform:translateY(-1px); }
+
+/* FOOTER */
+footer { background:var(--bg-alt); border-top:1px solid var(--border); padding:24px 8%; display:flex; align-items:center; justify-content:space-between; }
+footer p { font-size:13px; color:#888; }
+
+/* REVEAL */
+.reveal { opacity:1; transform:translateY(0); }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* KEYFRAMES */
+@keyframes float      { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+@keyframes float-slow { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-9px)} }
+
+/* RESPONSIVE — TABLETTE (max 1024px) */
+@media(max-width:1024px){
+  .av-grid{grid-template-columns:repeat(3,1fr)}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .process-grid{grid-template-columns:1fr 1fr} .process-grid::before{display:none}
+  .about-grid{grid-template-columns:1fr 1fr}
+  .temo{width:calc(50vw - 24px)}
+}
+
+/* RESPONSIVE — TABLETTE PORTRAIT + MOBILE LARGE (max 900px) */
+@media(max-width:900px){
+  /* Hero */
+  .hero{grid-template-columns:1fr; min-height:auto; padding:120px 5% 60px}
+  .hero-right{display:none}
+  .hero-title{font-size:clamp(32px,8vw,52px)}
+  .hero-sub{font-size:15px}
+
+  /* Nav */
+  .nav-links{display:none}
+  nav{padding:0 5%}
+
+  /* Burger menu */
+  .nav-burger{display:flex}
+
+  /* Grilles */
+  .av-grid{grid-template-columns:repeat(2,1fr); gap:12px}
+  .about-grid{grid-template-columns:1fr}
+  .about-img-wrap{width:240px;margin:0 auto 28px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .process-grid::before{display:none}
+  .secteur-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .mode-cards{grid-template-columns:1fr 1fr}
+
+  /* Carousel témoignages */
+  .temo{width:calc(85vw - 16px)}
+  .temo-stage{min-height:280px}
+
+  /* Footer */
+  footer{flex-direction:column;gap:12px;text-align:center}
+
+  /* Sections */
+  section{padding:70px 5%}
+
+  /* Clients pause button */
+  .clients-pause{font-size:10px;padding:3px 10px}
+}
+
+/* RESPONSIVE — MOBILE (max 600px) */
+@media(max-width:600px){
+  /* Typographie */
+  .hero-title{font-size:clamp(28px,9vw,42px)}
+  .s-title{font-size:clamp(22px,7vw,32px)}
+
+  /* Sections */
+  section{padding:50px 4%}
+
+  /* Grilles → 1 colonne */
+  .svc-grid{grid-template-columns:1fr}
+  .av-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .mode-cards{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr}
+
+  /* Hero boutons empilés */
+  .hero-btns{flex-direction:column; gap:10px}
+  .btn-main,.btn-sec{text-align:center; width:100%}
+
+  /* Carte contact */
+  .contact-form{padding:20px}
+
+  /* Avantages */
+  .av-card{padding:20px 16px}
+
+  /* Services */
+  .svc-card{padding:20px}
+  .svc-cta{padding:20px; font-size:16px}
+
+  /* Témoignages */
+  .temo{width:calc(92vw - 8px); padding:18px}
+  .temo p{font-size:15px}
+
+  /* Carousel clients */
+  .client-card{width:160px; padding:16px 12px}
+  .client-logo{width:60px; height:60px}
+
+  /* Modal mentions légales */
+  #ml-modal > div{padding:28px 20px}
+
+  /* Secteur */
+  .map-box iframe{height:280px}
+
+  /* Citations */
+  #quoteCard{padding:20px}
+  #quoteText{font-size:15px}
+}
+
+/* RESPONSIVE — TRÈS PETIT MOBILE (max 380px) */
+@media(max-width:380px){
+  .hero-title{font-size:26px}
+  .s-title{font-size:20px}
+  section{padding:40px 4%}
+  .av-grid{grid-template-columns:1fr}
+}
+</style>
+<style>
+#cookie-banner {
+  position:fixed; bottom:0; left:0; right:0; z-index:9998;
+  background:#fff; border-top:1px solid #e4ddf0;
+  padding:10px 5%; display:flex; align-items:center;
+  justify-content:space-between; gap:16px; flex-wrap:wrap;
+  box-shadow:0 -4px 24px rgba(165,75,210,.10);
+  font-family:Arial,sans-serif; font-size:13px; color:#444;
+}
+#cookie-banner p { margin:0; max-width:700px; line-height:1.6; }
+#cookie-banner a { color:#a54bd2; text-decoration:none; }
+.cookie-btns { display:flex; gap:10px; flex-shrink:0; }
+.cookie-accept {
+  background:linear-gradient(135deg,#1ea5f0,#a54bd2,#f04ba5);
+  color:#fff; border:none; border-radius:50px;
+  padding:8px 20px; font-size:13px; font-weight:600; cursor:pointer;
+}
+.cookie-refuse {
+  background:none; border:1px solid #e4ddf0; border-radius:50px;
+  padding:8px 20px; font-size:13px; font-weight:600;
+  color:#888; cursor:pointer; transition:border-color .2s;
+}
+.cookie-refuse:hover { border-color:#a54bd2; color:#a54bd2; }
+@media(max-width:600px){
+  #cookie-banner{flex-direction:column;align-items:flex-start;}
+  .cookie-btns{width:100%;}
+  .cookie-accept,.cookie-refuse{flex:1;text-align:center;}
+}
+</style>
+<style>
+/* Grilles propres à cette page, responsive */
+.diff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.secteur-grid-list { display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:12px; }
+@media(max-width:900px){
+  .diff-grid { grid-template-columns:1fr 1fr; gap:12px; }
+  .secteur-grid-list { grid-template-columns:1fr 1fr; gap:20px; }
+}
+@media(max-width:600px){
+  .diff-grid { grid-template-columns:1fr; }
+  .secteur-grid-list { grid-template-columns:1fr; gap:20px; }
+  h1.hero-title { font-size:clamp(28px,9vw,42px) !important; }
+}
+</style>
+
+<!-- Google Analytics GA4 — chargement conditionnel au consentement -->
+<script>
+function loadGA(){
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q5PHC6EQTK';
+  s.async = true;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', 'G-Q5PHC6EQTK', { anonymize_ip: true });
+}
+// Charger si déjà accepté
+if(localStorage.getItem('atylem_ga_consent') === 'accepted') loadGA();
+</script>
+
+</head>
+<body>
+
+<div id="cookie-banner" style="display:none;">
+  <p>Ce site utilise Google Analytics pour mesurer son audience de façon anonyme. <a href="#" onclick="document.getElementById('ml-modal').style.display='flex';return false;">En savoir plus</a></p>
+  <div class="cookie-btns">
+    <button class="cookie-refuse" id="cookieRefuse">Refuser</button>
+    <button class="cookie-accept" id="cookieAccept">Accepter</button>
+  </div>
+</div>
+<script>
+(function(){
+  var consent = localStorage.getItem('atylem_ga_consent');
+  if(!consent){
+    document.addEventListener('DOMContentLoaded', function(){
+      var b = document.getElementById('cookie-banner');
+      if(b) b.style.display = 'flex';
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var a = document.getElementById('cookieAccept');
+    var r = document.getElementById('cookieRefuse');
+    if(a) a.addEventListener('click', function(){
+      localStorage.setItem('atylem_ga_consent','accepted');
+      document.getElementById('cookie-banner').style.display='none';
+      loadGA();
+    });
+    if(r) r.addEventListener('click', function(){
+      localStorage.setItem('atylem_ga_consent','refused');
+      document.getElementById('cookie-banner').style.display='none';
+    });
+  });
+})();
+</script>
+
+<nav>
+  <div>
+    <a href="index.html"><img src="data:image/png;base64,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" alt="ATYLEM" style="height:36px"
+      onerror="this.outerHTML='<strong style=&quot;font-family:Georgia,serif;font-size:22px;color:#1e1e1e&quot;>ATYLEM</strong>'"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html#secretaire">Secrétariat</a></li>
+    <li><a href="index.html#about">Qui suis-je ?</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Me contacter</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile -->
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html#secretaire" onclick="closeMenu()">Secrétariat</a>
+  <a href="index.html#about" onclick="closeMenu()">Qui suis-je ?</a>
+  <a href="index.html#services" onclick="closeMenu()">Services</a>
+  <a href="index.html#clients" onclick="closeMenu()">Clients</a>
+  <a href="index.html#contact" class="nav-cta" onclick="closeMenu()">Me contacter</a>
+</div>
+
+<section style="min-height:auto; padding-top:130px; padding-bottom:60px; background:var(--bg);">
+  <div class="s-label"><div class="dots"><span class="dot dot-b"></span><span class="dot dot-p"></span><span class="dot dot-k"></span></div>Document Unique · DUERP</div>
+  <h1 class="hero-title" style="max-width:820px;">Le DUERP est obligatoire<br><span class="grad-text">dès votre premier salarié</span></h1>
+  <p class="hero-sub" style="max-width:640px; font-size:18px;">Artisan du bâtiment, vous devez évaluer et consigner par écrit les risques professionnels de votre entreprise. En cas de contrôle de l'inspection du travail ou d'accident du travail sans DUERP à jour, l'amende peut atteindre 1 500 € par salarié concerné, doublée en cas de récidive.</p>
+  <div class="hero-btns">
+    <a href="index.html#contact" class="btn-main">Faire mon DUERP</a>
+    <a href="#duerp-contenu" class="btn-sec">Voir ce que ça comprend</a>
+  </div>
+</section>
+
+<section class="s-alt">
+  <div class="s-label"><div class="dots"><span class="dot dot-b"></span><span class="dot dot-p"></span><span class="dot dot-k"></span></div>Pourquoi c'est urgent sur un chantier</div>
+  <h2 class="s-title" style="margin-bottom:24px;">Le BTP, secteur le <span class="grad-text">plus exposé et le plus contrôlé</span></h2>
+  <div class="about-text" style="max-width:820px;">
+    <p>Chutes de hauteur, port de charges, machines-outils, coactivité sur chantier : le secteur du bâtiment cumule les risques professionnels les plus fréquents et les plus graves. C'est aussi l'un des secteurs les plus contrôlés par l'inspection du travail, et le premier document demandé lors d'une visite de chantier ou après un accident, c'est le Document Unique.</p>
+    <p>Beaucoup d'artisans savent qu'ils doivent l'avoir, mais repoussent sa rédaction faute de temps, ou l'ont fait une fois il y a plusieurs années sans jamais le mettre à jour, ce qui, en cas de contrôle, équivaut souvent à ne pas en avoir du tout : la loi impose une actualisation au moins annuelle, ou dès qu'un changement de matériel, de méthode ou de personnel intervient.</p>
+  </div>
+</section>
+
+<section id="duerp-contenu">
+  <div class="s-label"><div class="dots"><span class="dot dot-b"></span><span class="dot dot-p"></span><span class="dot dot-k"></span></div>Ce que je prends en charge</div>
+  <h2 class="s-title" style="margin-bottom:36px;">Un DUERP <span class="grad-text">complet et conforme, sans que vous ayez à y passer vos soirées</span></h2>
+  <div class="diff-grid">
+    <div class="av-card">
+      <div class="av-num">01</div>
+      <p><strong>Élaboration initiale.</strong> Identification des unités de travail, recensement des risques propres à votre activité de gros œuvre, second œuvre ou finitions, et rédaction du document conforme aux exigences du Code du travail.</p>
+    </div>
+    <div class="av-card">
+      <div class="av-num">02</div>
+      <p><strong>Mise à jour annuelle.</strong> Le DUERP n'est valable que s'il est réactualisé chaque année ou à chaque évolution significative de votre activité, un chantier, un salarié, un équipement.</p>
+    </div>
+    <div class="av-card">
+      <div class="av-num">03</div>
+      <p><strong>Plan d'actions de prévention.</strong> Au-delà du constat, un vrai document exploitable qui liste les mesures pour réduire les risques identifiés, celui qu'un inspecteur ou une CARSAT attend de voir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s-alt">
+  <div class="s-label"><div class="dots"><span class="dot dot-b"></span><span class="dot dot-p"></span><span class="dot dot-k"></span></div>Pourquoi ATYLEM</div>
+  <h2 class="s-title" style="margin-bottom:24px;">Une secrétaire indépendante <span class="grad-text">qui connaît le bâtiment</span></h2>
+  <div class="about-text" style="max-width:820px;">
+    <p>Basée à La Chapelle-Blanche, en Cœur de Savoie, j'accompagne depuis 2018 des artisans du bâtiment sur l'ensemble de leur gestion administrative. Le DUERP n'est pas un service à part, c'est une extension naturelle de ce que je fais déjà pour eux : de la paperasse technique dont ils n'ont ni le temps ni toujours l'envie de s'occuper.</p>
+  </div>
+</section>
+
+<section style="text-align:center; padding:100px 8%;">
+  <a href="index.html#contact" class="svc-cta" style="display:inline-flex; max-width:600px; margin:0 auto;">Pas encore de DUERP à jour ? Parlons-en avant le prochain contrôle.</a>
+</section>
+
+<footer>
+  <p>© 2025 ATYLEM — Alison STRAKA · Assistante de gestion indépendante · Cœur de Savoie · <a href="#" onclick="document.getElementById('ml-modal').style.display='flex';return false;" style="color:#a54bd2;text-decoration:none;font-weight:600;">Mentions légales</a></p>
+  <div class="dots"><span class="dot dot-b"></span><span class="dot dot-p"></span><span class="dot dot-k"></span></div>
+</footer>
+
+<!-- MODAL MENTIONS LÉGALES -->
+<div id="ml-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.55);overflow-y:auto;padding:40px 20px;align-items:flex-start;justify-content:center;">
+  <div style="background:#fff;max-width:760px;width:100%;margin:0 auto;border-radius:20px;padding:48px;position:relative;font-family:Arial,sans-serif;color:#1e1e1e;line-height:1.8;">
+    <button onclick="document.getElementById('ml-modal').style.display='none'" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:32px;cursor:pointer;color:#aaa;line-height:1;">×</button>
+
+    <h2 style="font-family:Georgia,serif;font-size:26px;margin-bottom:32px;background:linear-gradient(135deg,#1ea5f0,#a54bd2,#f04ba5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Mentions légales</h2>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Éditeur du site</h3>
+    <p>Le site <strong>www.atylem.fr</strong> est édité par :</p>
+    <p><strong>ATYLEM</strong><br>
+    EURL — Entreprise unipersonnelle à responsabilité limitée<br>
+    Gérante : Alison STRAKA<br>
+    55 rue de la Chapelle 73110 LA CHAPELLE-BLANCHE<br>
+    SIRET : 880 563 697 00015<br>
+    N° TVA intracommunautaire : FR87 880 563 697<br>
+    Code APE : 8211Z — Services administratifs combinés de bureau<br>
+    Téléphone : 07 83 73 68 27<br>
+    Email : <a href="mailto:contact@atylem.fr" style="color:#a54bd2;">contact@atylem.fr</a></p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Hébergement</h3>
+    <p>Ce site est hébergé via <strong>GitHub Pages</strong> (GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis) et le nom de domaine est géré par <strong>IONOS SE</strong> (Elgendorfer Str. 57, 56410 Montabaur, Allemagne).</p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Propriété intellectuelle</h3>
+    <p>L'ensemble du contenu de ce site (textes, visuels, structure) est la propriété exclusive d'ATYLEM, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, est interdite sans autorisation préalable écrite.</p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Données personnelles &amp; RGPD</h3>
+    <p>Les données collectées via le formulaire de contact (nom, prénom, adresse email, message) sont utilisées exclusivement pour répondre aux demandes des utilisateurs. Elles sont transmises directement à contact@atylem.fr et ne font l'objet d'aucun traitement automatisé ni de cession à des tiers.</p>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits : <a href="mailto:contact@atylem.fr" style="color:#a54bd2;">contact@atylem.fr</a>.</p>
+    <p>Aucun cookie de traçage ou de profilage n'est déposé sur ce site.</p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Liens hypertextes</h3>
+    <p>Ce site contient des liens vers des sites tiers (clients référencés). ATYLEM n'est pas responsable du contenu de ces sites.</p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Médiation de la consommation</h3>
+    <p>Conformément aux articles L.616-1 et R.616-1 du Code de la consommation, ATYLEM a adhéré au service de médiation de la consommation. En cas de litige non résolu à l'amiable, vous pouvez recourir gratuitement au médiateur de la CCI de Savoie :</p>
+    <p><strong>CCI de Savoie</strong><br>
+    5 rue Salteur, 73000 Chambéry<br>
+    <a href="https://www.savoie.cci.fr" target="_blank" rel="noopener noreferrer" style="color:#a54bd2;">www.savoie.cci.fr</a></p>
+    <p style="font-size:13px;color:#888;">La médiation est accessible uniquement aux consommateurs personnes physiques, pour des litiges nés d'un contrat de prestation de services.</p>
+
+    <h3 style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a54bd2;margin:24px 0 8px;">Droit applicable</h3>
+    <p>Le présent site est soumis au droit français. Tout litige relatif à son utilisation relève de la compétence des tribunaux français.</p>
+
+    <p style="margin-top:32px;font-size:12px;color:#aaa;border-top:1px solid #eee;padding-top:16px;">Dernière mise à jour : mai 2026</p>
+  </div>
+</div>
+
+<script>
+// Burger menu
+const burger = document.getElementById('navBurger');
+const mobileMenu = document.getElementById('navMobile');
+function closeMenu(){
+  burger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}
+if(burger){
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+}
+document.addEventListener('click', (e) => {
+  if(burger && mobileMenu && !burger.contains(e.target) && !mobileMenu.contains(e.target)){
+    closeMenu();
+  }
+});
+</script>
+
+</body>
+</html>
