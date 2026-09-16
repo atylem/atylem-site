@@ -54,4 +54,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.atylem.fr/gestion-financiere-commerciale.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.atylem.fr/particuliers-etudiants.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
